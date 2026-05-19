@@ -820,11 +820,12 @@ section {
 }
 
 .checklist li {
-  padding: 14px 0 14px 40px;
+  padding: 14px 40px 14px 0;
   border-bottom: 1px dashed var(--line);
   position: relative;
   font-size: 16px;
   color: var(--ink);
+  line-height: 1.7;
 }
 
 .checklist li:last-child { border: none; }
@@ -833,7 +834,7 @@ section {
   content: '✓';
   position: absolute;
   right: 0;
-  top: 14px;
+  top: 16px;
   width: 24px;
   height: 24px;
   background: var(--gold);
@@ -843,6 +844,18 @@ section {
   line-height: 24px;
   font-weight: 700;
   font-size: 14px;
+  flex-shrink: 0;
+}
+
+/* The title row doesn't need a checkmark */
+.checklist .checklist-title {
+  padding: 0 0 24px 0;
+  border-bottom: 1px solid var(--gold);
+  margin-bottom: 16px;
+}
+
+.checklist .checklist-title::before {
+  display: none !important;
 }
 
 /* ============================================
