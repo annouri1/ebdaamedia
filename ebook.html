@@ -1,0 +1,2266 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>كتاب المتاجر الإلكترونية الناجحة 2026 | Ebdaa Media</title>
+<meta name="description" content="الدليل الكامل لبناء متجر إلكتروني يبيع فعلياً — تحليل عميق، استراتيجيات مُجرّبة، وأخطاء يجب تجنبها">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@400;500;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================
+   DESIGN TOKENS - Editorial Luxury Magazine
+   ============================================ */
+:root {
+  --ink: #1A1814;
+  --ink-soft: #3A352E;
+  --ink-muted: #6B6359;
+  --paper: #F7F2E8;
+  --paper-warm: #EDE4D3;
+  --paper-deep: #E0D4BE;
+  --gold: #B8954A;
+  --gold-deep: #8B6F2E;
+  --gold-glow: #D4B66A;
+  --crimson: #8B2C2C;
+  --crimson-soft: #A8453D;
+  --sage: #5E6E58;
+  --line: rgba(26, 24, 20, 0.12);
+  --line-strong: rgba(26, 24, 20, 0.25);
+  --shadow-paper: 0 2px 12px rgba(139, 111, 46, 0.08);
+  --shadow-deep: 0 24px 60px rgba(26, 24, 20, 0.15);
+  --shadow-floating: 0 8px 32px rgba(184, 149, 74, 0.2);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--paper);
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+/* Paper texture */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 25% 25%, rgba(139, 111, 46, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(139, 44, 44, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' seed='3'/%3E%3CfeColorMatrix values='0 0 0 0 0.55 0 0 0 0 0.45 0 0 0 0 0.25 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 2;
+  mix-blend-mode: multiply;
+}
+
+/* ============================================
+   FLOATING WHATSAPP CTA (always visible)
+   ============================================ */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #25D366;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 100px;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  animation: floatPulse 2.5s ease-in-out infinite;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 40px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-float svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+@keyframes floatPulse {
+  0%, 100% { box-shadow: 0 8px 32px rgba(37, 211, 102, 0.4); }
+  50% { box-shadow: 0 8px 32px rgba(37, 211, 102, 0.7), 0 0 0 8px rgba(37, 211, 102, 0.1); }
+}
+
+@media (max-width: 640px) {
+  .whatsapp-float span { display: none; }
+  .whatsapp-float {
+    padding: 16px;
+    border-radius: 50%;
+  }
+}
+
+/* ============================================
+   COVER / HERO
+   ============================================ */
+.cover {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 80px 24px;
+  background: var(--paper);
+  overflow: hidden;
+  z-index: 3;
+}
+
+.cover::before {
+  content: '';
+  position: absolute;
+  inset: 40px;
+  border: 1px solid var(--gold);
+  pointer-events: none;
+}
+
+.cover::after {
+  content: '';
+  position: absolute;
+  inset: 48px;
+  border: 1px solid var(--line);
+  pointer-events: none;
+}
+
+.cover-content {
+  max-width: 900px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.cover-tag {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 18px;
+  color: var(--gold-deep);
+  letter-spacing: 0.05em;
+  margin-bottom: 32px;
+  position: relative;
+  display: inline-block;
+}
+
+.cover-tag::before,
+.cover-tag::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 60px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.cover-tag::before { right: calc(100% + 20px); }
+.cover-tag::after { left: calc(100% + 20px); }
+
+.cover-edition {
+  font-family: 'Cairo', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  color: var(--ink-muted);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.cover-title {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 900;
+  font-size: clamp(40px, 8vw, 96px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  margin-bottom: 24px;
+}
+
+.cover-title em {
+  font-style: italic;
+  font-family: 'Amiri', serif;
+  color: var(--gold-deep);
+  font-weight: 700;
+}
+
+.cover-subtitle {
+  font-family: 'Cairo', sans-serif;
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-weight: 400;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  max-width: 700px;
+  margin: 0 auto 48px;
+}
+
+.cover-meta {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+
+.cover-meta-item {
+  font-family: 'Cairo', sans-serif;
+  font-size: 14px;
+  color: var(--ink-muted);
+  text-align: center;
+}
+
+.cover-meta-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--gold-deep);
+  display: block;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.cover-scroll {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--ink-muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  animation: bobble 2s ease-in-out infinite;
+}
+
+.cover-scroll::after {
+  content: '↓';
+  font-size: 20px;
+  color: var(--gold-deep);
+}
+
+@keyframes bobble {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
+}
+
+/* Ornamental flourish */
+.flourish {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 24px 0;
+  color: var(--gold);
+}
+
+.flourish::before,
+.flourish::after {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.flourish-symbol {
+  font-size: 16px;
+  color: var(--gold-deep);
+}
+
+/* ============================================
+   CONTAINER & SECTIONS
+   ============================================ */
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 3;
+}
+
+.container-wide {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 3;
+}
+
+section {
+  padding: 80px 0;
+  position: relative;
+  z-index: 3;
+}
+
+.chapter-mark {
+  text-align: center;
+  margin-bottom: 32px;
+  font-family: 'Playfair Display', serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.4em;
+  color: var(--gold-deep);
+  text-transform: uppercase;
+}
+
+.chapter-number {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: 1.5px solid var(--gold);
+  border-radius: 50%;
+  line-height: 45px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 22px;
+  color: var(--gold-deep);
+  margin: 0 auto 16px;
+  display: block;
+}
+
+.chapter-title {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 900;
+  font-size: clamp(32px, 5vw, 56px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 24px;
+  color: var(--ink);
+}
+
+.chapter-title em {
+  font-family: 'Amiri', serif;
+  font-style: italic;
+  color: var(--gold-deep);
+}
+
+.chapter-intro {
+  font-family: 'Cairo', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: var(--ink-soft);
+  line-height: 1.8;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 64px;
+}
+
+/* ============================================
+   PROSE
+   ============================================ */
+.prose {
+  font-family: 'Cairo', sans-serif;
+  font-size: 18px;
+  line-height: 1.9;
+  color: var(--ink);
+}
+
+.prose p {
+  margin-bottom: 24px;
+}
+
+.prose p.lead {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.prose strong {
+  color: var(--gold-deep);
+  font-weight: 700;
+}
+
+.prose em {
+  font-family: 'Amiri', serif;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.prose h3 {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  margin: 48px 0 16px;
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+.prose h4 {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin: 32px 0 12px;
+  color: var(--ink);
+}
+
+.drop-cap::first-letter {
+  font-family: 'Playfair Display', serif;
+  font-size: 80px;
+  font-weight: 700;
+  float: right;
+  line-height: 0.85;
+  margin: 8px 0 0 12px;
+  color: var(--gold-deep);
+}
+
+/* Pullquote */
+.pullquote {
+  margin: 64px 0;
+  padding: 48px 32px;
+  text-align: center;
+  position: relative;
+  border-top: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+}
+
+.pullquote::before {
+  content: '"';
+  position: absolute;
+  top: -24px;
+  right: 50%;
+  transform: translateX(50%);
+  font-family: 'Playfair Display', serif;
+  font-size: 80px;
+  color: var(--gold-deep);
+  background: var(--paper);
+  padding: 0 16px;
+  line-height: 1;
+}
+
+.pullquote p {
+  font-family: 'Amiri', serif;
+  font-style: italic;
+  font-size: 26px;
+  line-height: 1.6;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+
+.pullquote cite {
+  font-family: 'Cairo', sans-serif;
+  font-size: 14px;
+  color: var(--ink-muted);
+  font-style: normal;
+  letter-spacing: 0.05em;
+}
+
+/* Numbered list with style */
+.numbered-list {
+  list-style: none;
+  counter-reset: chapter;
+  margin: 32px 0;
+}
+
+.numbered-list li {
+  counter-increment: chapter;
+  padding: 24px 0 24px 60px;
+  position: relative;
+  border-bottom: 1px solid var(--line);
+}
+
+.numbered-list li:last-child { border-bottom: none; }
+
+.numbered-list li::before {
+  content: counter(chapter, decimal-leading-zero);
+  position: absolute;
+  right: 0;
+  top: 24px;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--gold-deep);
+  font-style: italic;
+}
+
+.numbered-list h4 {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+
+.numbered-list p {
+  font-size: 17px;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+
+/* ============================================
+   STAT BOX (alarming statistics)
+   ============================================ */
+.stat-box {
+  margin: 48px 0;
+  padding: 48px;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 4px;
+  position: relative;
+  text-align: center;
+}
+
+.stat-box::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px solid var(--gold);
+  pointer-events: none;
+}
+
+.stat-box-label {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--gold-glow);
+  margin-bottom: 16px;
+  letter-spacing: 0.1em;
+}
+
+.stat-box-number {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(64px, 12vw, 120px);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--gold-glow);
+  margin-bottom: 16px;
+  letter-spacing: -0.04em;
+}
+
+.stat-box-desc {
+  font-family: 'Cairo', sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto;
+  color: rgba(247, 242, 232, 0.9);
+}
+
+/* ============================================
+   ERROR CARDS (the 7 mistakes)
+   ============================================ */
+.errors-grid {
+  margin: 64px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.error-card {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 32px;
+  padding: 40px;
+  background: var(--paper-warm);
+  border-radius: 4px;
+  position: relative;
+  border-right: 4px solid var(--crimson);
+  transition: all 0.4s ease;
+}
+
+.error-card:hover {
+  transform: translateX(-8px);
+  box-shadow: var(--shadow-deep);
+}
+
+@media (max-width: 640px) {
+  .error-card { grid-template-columns: 1fr; gap: 16px; padding: 32px 24px; }
+}
+
+.error-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 0.9;
+  color: var(--crimson);
+  font-style: italic;
+  letter-spacing: -0.05em;
+}
+
+.error-content h3 {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  margin-bottom: 12px;
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+.error-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin-bottom: 16px;
+}
+
+.error-content .impact {
+  display: inline-block;
+  padding: 6px 16px;
+  background: var(--crimson);
+  color: var(--paper);
+  font-family: 'Cairo', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 2px;
+  letter-spacing: 0.02em;
+}
+
+.error-content .fix {
+  margin-top: 16px;
+  padding: 16px;
+  background: var(--paper);
+  border-right: 3px solid var(--sage);
+  border-radius: 2px;
+}
+
+.error-content .fix strong {
+  color: var(--sage);
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+.error-content .fix p {
+  font-size: 15px;
+  margin: 0;
+  color: var(--ink);
+}
+
+/* ============================================
+   COMPARISON TABLE - OLD vs NEW
+   ============================================ */
+.comparison {
+  margin: 64px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .comparison { grid-template-columns: 1fr; }
+}
+
+.comparison-col {
+  padding: 40px 32px;
+}
+
+.comparison-col.old {
+  background: var(--paper-warm);
+  border-left: 1px solid var(--line-strong);
+}
+
+.comparison-col.new {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.comparison-label {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+
+.comparison-col.old .comparison-label { color: var(--crimson); }
+.comparison-col.new .comparison-label { color: var(--gold-glow); }
+
+.comparison-title {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.comparison-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.comparison-list li {
+  display: flex;
+  gap: 12px;
+  font-size: 15px;
+  line-height: 1.6;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.comparison-col.old .comparison-list li {
+  border-color: var(--line);
+}
+
+.comparison-list li:last-child { border-bottom: none; }
+
+.comparison-list .icon {
+  flex-shrink: 0;
+  font-size: 18px;
+  line-height: 1;
+  margin-top: 3px;
+}
+
+.comparison-col.old .icon { color: var(--crimson); }
+.comparison-col.new .icon { color: var(--gold-glow); }
+
+/* ============================================
+   FORMULA BOX
+   ============================================ */
+.formula-box {
+  margin: 48px 0;
+  padding: 48px;
+  background: var(--paper-warm);
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+}
+
+.formula-box::before {
+  content: 'الصيغة الذهبية';
+  position: absolute;
+  top: -12px;
+  right: 50%;
+  transform: translateX(50%);
+  background: var(--gold);
+  color: var(--paper);
+  padding: 4px 16px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+}
+
+.formula {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(24px, 4vw, 36px);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.formula em {
+  color: var(--gold-deep);
+  font-style: italic;
+}
+
+.formula-explanation {
+  font-family: 'Cairo', sans-serif;
+  font-size: 16px;
+  color: var(--ink-soft);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   CHECKLIST
+   ============================================ */
+.checklist {
+  margin: 48px 0;
+  list-style: none;
+  background: var(--paper-warm);
+  padding: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--gold);
+}
+
+.checklist-title {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  margin-bottom: 24px;
+  text-align: center;
+  color: var(--gold-deep);
+}
+
+.checklist li {
+  padding: 14px 40px 14px 0;
+  border-bottom: 1px dashed var(--line);
+  position: relative;
+  font-size: 16px;
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+.checklist li:last-child { border: none; }
+
+.checklist li::before {
+  content: '✓';
+  position: absolute;
+  right: 0;
+  top: 16px;
+  width: 24px;
+  height: 24px;
+  background: var(--gold);
+  color: var(--paper);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 700;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+/* The title row doesn't need a checkmark */
+.checklist .checklist-title {
+  padding: 0 0 24px 0;
+  border-bottom: 1px solid var(--gold);
+  margin-bottom: 16px;
+}
+
+.checklist .checklist-title::before {
+  display: none !important;
+}
+
+/* ============================================
+   CTA SECTIONS (THE SELLING POINTS)
+   ============================================ */
+.cta-section {
+  margin: 80px 0;
+  padding: 64px 48px;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border: 1px solid var(--gold);
+  pointer-events: none;
+}
+
+.cta-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(184, 149, 74, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 20% 80%, rgba(139, 44, 44, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-tag {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--gold-glow);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.cta-title {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 900;
+  font-size: clamp(28px, 4.5vw, 44px);
+  line-height: 1.2;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.cta-title em {
+  font-family: 'Amiri', serif;
+  font-style: italic;
+  color: var(--gold-glow);
+}
+
+.cta-text {
+  font-family: 'Cairo', sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(247, 242, 232, 0.85);
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 36px;
+  background: #25D366;
+  color: white;
+  border-radius: 100px;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.3);
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(37, 211, 102, 0.5);
+}
+
+.cta-button svg {
+  width: 22px;
+  height: 22px;
+}
+
+.cta-note {
+  margin-top: 16px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--gold-glow);
+  opacity: 0.8;
+}
+
+/* ============================================
+   PROCESS / STEPS
+   ============================================ */
+.process-steps {
+  margin: 64px 0;
+}
+
+.process-step {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 32px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+}
+
+.process-step:last-child { border-bottom: none; }
+
+.process-step-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--gold-deep);
+  font-style: italic;
+}
+
+.process-step h4 {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+
+.process-step p {
+  font-size: 16px;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+  .process-step { grid-template-columns: 60px 1fr; gap: 16px; }
+  .process-step-number { font-size: 40px; }
+}
+
+/* ============================================
+   CASE STUDY / SCENARIO
+   ============================================ */
+.scenario {
+  margin: 48px 0;
+  padding: 40px;
+  background: var(--paper-warm);
+  border-radius: 4px;
+  border-right: 4px solid var(--sage);
+}
+
+.scenario-tag {
+  display: inline-block;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 13px;
+  color: var(--sage);
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.scenario h4 {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: var(--ink);
+}
+
+.scenario-numbers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.scenario-num {
+  text-align: center;
+}
+
+.scenario-num-value {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--sage);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.scenario-num-label {
+  font-family: 'Cairo', sans-serif;
+  font-size: 13px;
+  color: var(--ink-muted);
+}
+
+/* ============================================
+   FINAL CTA
+   ============================================ */
+.final-cta {
+  background: linear-gradient(135deg, var(--ink) 0%, var(--ink-soft) 100%);
+  color: var(--paper);
+  padding: 120px 24px;
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.final-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(184, 149, 74, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 70% 70%, rgba(139, 44, 44, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.final-cta-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.final-cta-tag {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 16px;
+  color: var(--gold-glow);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.final-cta-title {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 900;
+  font-size: clamp(40px, 6vw, 72px);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 32px;
+}
+
+.final-cta-title em {
+  font-family: 'Amiri', serif;
+  font-style: italic;
+  color: var(--gold-glow);
+}
+
+.final-cta-text {
+  font-family: 'Cairo', sans-serif;
+  font-size: 20px;
+  line-height: 1.7;
+  color: rgba(247, 242, 232, 0.85);
+  margin-bottom: 48px;
+}
+
+.final-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.btn-large {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 40px;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: white;
+  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.4);
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(37, 211, 102, 0.6);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--paper);
+  border: 1.5px solid var(--gold);
+}
+
+.btn-outline:hover {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+.final-note {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 16px;
+  color: rgba(247, 242, 232, 0.7);
+  margin-top: 24px;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.book-footer {
+  padding: 64px 24px 32px;
+  background: var(--paper-warm);
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  border-top: 1px solid var(--line);
+}
+
+.book-footer-mark {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--ink-muted);
+  margin-bottom: 16px;
+  letter-spacing: 0.1em;
+}
+
+.book-footer-brand {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.book-footer-tagline {
+  font-family: 'Cairo', sans-serif;
+  font-size: 16px;
+  color: var(--ink-soft);
+  max-width: 500px;
+  margin: 0 auto 32px;
+  line-height: 1.7;
+}
+
+.book-footer-meta {
+  font-family: 'Cairo', sans-serif;
+  font-size: 13px;
+  color: var(--ink-muted);
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================
+   TABLE OF CONTENTS
+   ============================================ */
+.toc {
+  margin: 48px 0;
+  padding: 48px;
+  background: var(--paper-warm);
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+}
+
+.toc-title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 16px;
+  color: var(--gold-deep);
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.toc-list {
+  list-style: none;
+  counter-reset: toc;
+}
+
+.toc-list li {
+  counter-increment: toc;
+  padding: 16px 0;
+  border-bottom: 1px dashed var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.toc-list li:last-child { border: none; }
+
+.toc-list li::before {
+  content: counter(toc, decimal-leading-zero);
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: var(--gold-deep);
+  font-size: 18px;
+  flex-shrink: 0;
+  width: 40px;
+}
+
+.toc-list a {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--ink);
+  flex: 1;
+  transition: color 0.2s;
+}
+
+.toc-list a:hover { color: var(--gold-deep); }
+
+.toc-list .dots {
+  flex: 1;
+  border-bottom: 1px dotted var(--line-strong);
+  margin: 0 8px;
+  height: 12px;
+}
+
+.toc-list .page {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: var(--ink-muted);
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  section { padding: 60px 0; }
+  .cover-meta { gap: 24px; }
+  .pullquote { padding: 32px 16px; margin: 40px 0; }
+  .pullquote p { font-size: 20px; }
+  .stat-box { padding: 32px 24px; }
+  .toc { padding: 32px 24px; }
+  .cta-section { padding: 48px 24px; }
+  .formula-box { padding: 32px 24px; }
+  .final-cta { padding: 80px 16px; }
+}
+
+/* Reading progress bar */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(184, 149, 74, 0.1);
+  z-index: 999;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), var(--gold-deep));
+  width: 0%;
+  transition: width 0.1s ease;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Reading Progress -->
+<div class="progress-bar">
+  <div class="progress-bar-fill" id="progressBar"></div>
+</div>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/212621836322?text=السلام%20عليكم%20محمد،%20قرأت%20الكتاب%20كاملاً%20وأريد%20معرفة%20المزيد%20عن%20خدمة%20تصميم%20المتاجر%20الإلكترونية%20بنظام%20الاشتراك%20الشهري." class="whatsapp-float" target="_blank">
+  <svg viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+  <span>تواصل عبر واتساب</span>
+</a>
+
+<!-- ============================================
+     COVER PAGE
+     ============================================ -->
+<section class="cover">
+  <div class="cover-content">
+    <div class="cover-edition">Edition 2026 · إصدار حصري</div>
+
+    <h1 class="cover-title">
+      الكتاب الذي<br>
+      <em>لن يكتبه</em><br>
+      المصممون
+    </h1>
+
+    <div class="flourish">
+      <span class="flourish-symbol">❦</span>
+    </div>
+
+    <div class="cover-tag">دليل المتاجر الإلكترونية الناجحة</div>
+
+    <p class="cover-subtitle">
+      تحليل عميق لـ 100 متجر عربي · 7 أخطاء قاتلة · صيغة ذهبية لمتجر يبيع فعلياً · ولماذا 90% من المتاجر تفشل في صمت
+    </p>
+
+    <div class="cover-meta">
+      <div class="cover-meta-item">
+        <span class="cover-meta-num">100</span>
+        متجر تم تحليله
+      </div>
+      <div class="cover-meta-item">
+        <span class="cover-meta-num">7</span>
+        أخطاء قاتلة
+      </div>
+      <div class="cover-meta-item">
+        <span class="cover-meta-num">15+</span>
+        دقيقة قراءة
+      </div>
+      <div class="cover-meta-item">
+        <span class="cover-meta-num">5</span>
+        سنوات خبرة
+      </div>
+    </div>
+
+    <div class="cover-scroll">تابع القراءة</div>
+  </div>
+</section>
+
+<!-- ============================================
+     TABLE OF CONTENTS
+     ============================================ -->
+<section style="background: var(--paper); padding: 60px 0;">
+  <div class="container">
+    <div class="toc">
+      <div class="toc-title">فهرس الكتاب</div>
+      <ul class="toc-list">
+        <li>
+          <a href="#chapter-1">المقدمة: لماذا كتبت هذا الكتاب</a>
+          <span class="dots"></span>
+          <span class="page">07</span>
+        </li>
+        <li>
+          <a href="#chapter-2">الحقيقة الصادمة: تحليل 100 متجر عربي</a>
+          <span class="dots"></span>
+          <span class="page">12</span>
+        </li>
+        <li>
+          <a href="#chapter-3">7 أخطاء قاتلة تخسر بسببها 70% من مبيعاتك</a>
+          <span class="dots"></span>
+          <span class="page">18</span>
+        </li>
+        <li>
+          <a href="#chapter-4">الصيغة الذهبية لمتجر يبيع فعلياً</a>
+          <span class="dots"></span>
+          <span class="page">32</span>
+        </li>
+        <li>
+          <a href="#chapter-5">النموذج القديم vs النموذج الجديد</a>
+          <span class="dots"></span>
+          <span class="page">42</span>
+        </li>
+        <li>
+          <a href="#chapter-6">قائمة فحص: هل متجرك جاهز للنمو؟</a>
+          <span class="dots"></span>
+          <span class="page">50</span>
+        </li>
+        <li>
+          <a href="#chapter-7">الخطوة التالية لك</a>
+          <span class="dots"></span>
+          <span class="page">58</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     CHAPTER 1: INTRODUCTION
+     ============================================ -->
+<section id="chapter-1">
+  <div class="container">
+    <div class="chapter-mark">
+      <span class="chapter-number">١</span>
+      المقدمة
+    </div>
+    <h2 class="chapter-title">
+      لماذا <em>كتبت</em><br>
+      هذا الكتاب
+    </h2>
+
+    <div class="prose">
+      <p class="lead drop-cap">
+        قبل خمس سنوات، بدأت بيع المنتجات الرقمية في السوق العربي. كتبت كتباً عن التجارة الإلكترونية. صنعت كورسات عن بناء المتاجر. ساعدت مئات الأشخاص — كما اعتقدت.
+      </p>
+
+      <p>
+        في يوم لا أنساه، قررت أن أبحث في الحقيقة المُرّة:
+      </p>
+
+      <p>
+        <strong>كم نسبة من مشتري كتبي طبقوا فعلاً وحققوا نتائج؟</strong>
+      </p>
+
+      <p>
+        تواصلت مع 50 مشترٍ سابقاً. سألتهم سؤالاً واحداً مباشراً: "هل بنيت متجرك الإلكتروني؟ هل يبيع؟"
+      </p>
+
+      <p>
+        النتائج صدمتني:
+      </p>
+    </div>
+
+    <div class="stat-box">
+      <div class="stat-box-label">من أصل 50 مشترٍ سابقاً</div>
+      <div class="stat-box-number">0</div>
+      <div class="stat-box-desc">
+        صفر شخص لديه متجر إلكتروني ناجح حقيقي. 38 لم يبدؤوا أصلاً. 9 بدؤوا وتوقفوا. 3 لديهم متجر لا يبيع.
+      </div>
+    </div>
+
+    <div class="prose">
+      <p>
+        أوقفت بيع الكتب والكورسات في ذلك اليوم.
+      </p>
+
+      <p>
+        ليس لأنها كانت سيئة. بل لأنني اكتشفت <strong>السر القاتل</strong> الذي لا يخبرك به أحد:
+      </p>
+
+      <p>
+        <em>المعلومات وحدها لا تكفي. النموذج هو المشكلة.</em>
+      </p>
+
+      <p>
+        بناء متجر إلكتروني ناجح يحتاج خبرة في WordPress، WooCommerce، Elementor، SEO، نسخ بيعية، تصوير منتجات، AI Tools، بوابات دفع، استراتيجيات تسويق، تحليلات، تحسين تحويل... <strong>كل هذا في حزمة واحدة</strong>.
+      </p>
+
+      <p>
+        لا أحد يستطيع تعلم كل هذا من كتاب. ولا حتى من كورس مكثف.
+      </p>
+
+      <p>
+        لذا قررت بناء نموذج جديد. <strong>نموذج لم يُجرَّب في الوطن العربي من قبل</strong>. ستفهمه بنهاية هذا الكتاب.
+      </p>
+
+      <p>
+        لكن قبل ذلك، أريدك أن تفهم <strong>لماذا يفشل 90% من المتاجر العربية</strong>.
+      </p>
+
+      <p>
+        وما تقرأه الآن هو نتيجة تحليل عميق لـ 100 متجر عربي حقيقي. تحليل قد يجعلك تكتشف أن متجرك يقع في نفس الأخطاء — دون أن تدري.
+      </p>
+    </div>
+
+    <div class="pullquote">
+      <p>
+        الفرق بين متجر يبيع 100$ شهرياً ومتجر يبيع 50,000$ ليس في "حظ" — بل في تجنُّب 7 أخطاء بسيطة يقع فيها الجميع.
+      </p>
+      <cite>— محمد العنوري، مؤسس Ebdaa Media</cite>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     CHAPTER 2: SHOCKING ANALYSIS
+     ============================================ -->
+<section id="chapter-2" style="background: var(--paper-warm);">
+  <div class="container">
+    <div class="chapter-mark">
+      <span class="chapter-number">٢</span>
+      الفصل الثاني
+    </div>
+    <h2 class="chapter-title">
+      الحقيقة <em>الصادمة</em><br>
+      تحليل 100 متجر عربي
+    </h2>
+
+    <p class="chapter-intro">
+      اخترت 100 متجر إلكتروني عربي عشوائياً. حللتها واحداً تلو الآخر. النتائج لن تعجبك — لكنها قد تنقذ متجرك.
+    </p>
+
+    <div class="prose">
+      <h3>المنهجية</h3>
+      <p>
+        قبل أن أشاركك النتائج، دعني أوضح كيف أجريت التحليل بحيادية:
+      </p>
+
+      <ul class="numbered-list">
+        <li>
+          <h4>اختيار العينة</h4>
+          <p>100 متجر عربي عشوائي من السعودية، الإمارات، مصر، المغرب، الكويت، والأردن. متنوعة بين قطاعات: ملابس، عطور، إلكترونيات، مأكولات، خدمات.</p>
+        </li>
+        <li>
+          <h4>أدوات التحليل</h4>
+          <p>Google PageSpeed Insights، GTmetrix، Mobile-Friendly Test، تحليل بصري يدوي لكل متجر.</p>
+        </li>
+        <li>
+          <h4>المعايير</h4>
+          <p>12 معياراً تقنياً وتسويقياً: السرعة، التجاوب، أوصاف المنتجات، إشارات الثقة، تجربة الدفع، استراتيجية المحتوى، السيو الأساسي.</p>
+        </li>
+      </ul>
+
+      <h3>النتائج الرئيسية</h3>
+      <p>
+        قبل أن أكشف الأخطاء التفصيلية في الفصل القادم، إليك الأرقام الكبرى التي ستصدمك:
+      </p>
+    </div>
+
+    <div class="stat-box">
+      <div class="stat-box-label">من أصل 100 متجر تم تحليله</div>
+      <div class="stat-box-number">87</div>
+      <div class="stat-box-desc">
+        متجراً يفقد 50% أو أكثر من مبيعاته المحتملة بسبب أخطاء بسيطة جداً يمكن إصلاحها في أسبوع
+      </div>
+    </div>
+
+    <div class="prose">
+      <p>
+        <strong>هذا الرقم وحده يجب أن يجعلك تتوقف.</strong>
+      </p>
+
+      <p>
+        87 من كل 100 متجر عربي يبيع نصف ما يمكنه أن يبيع — على الأقل.
+      </p>
+
+      <p>
+        قد تكون أنت أحدهم. والأسوأ: ربما تظن أن متجرك "يعمل" — بينما هو في الحقيقة <em>ينزف فرصاً يومياً</em>.
+      </p>
+
+      <h3>الأرقام التفصيلية</h3>
+      <p>
+        من خلال تحليلي العميق، اكتشفت:
+      </p>
+
+      <ul class="numbered-list">
+        <li>
+          <h4>73% بسرعة موبايل أقل من 50/100</h4>
+          <p>وفقاً لـ Google، إذا تأخر موقعك 3 ثوانٍ، 53% من زوار الموبايل يغادرون. هؤلاء المتاجر تخسر أكثر من نصف زوارها قبل رؤية المنتج الأول.</p>
+        </li>
+        <li>
+          <h4>61% بتجربة موبايل سيئة</h4>
+          <p>أزرار صغيرة، نصوص تحتاج تكبير، نماذج صعبة. في وقت يأتي 74% من زوار التجارة الإلكترونية العربية من الموبايل.</p>
+        </li>
+        <li>
+          <h4>62% أوصاف منتجات أقل من 30 كلمة</h4>
+          <p>أوصاف لا تبيع. كلمات قليلة، لا تذكر الفائدة، لا تستهدف الجمهور، لا تخلق رغبة الشراء.</p>
+        </li>
+        <li>
+          <h4>81% يفتقرون لإشارات الثقة الأساسية</h4>
+          <p>لا شهادات حقيقية، لا سياسة إرجاع واضحة، لا صفحة "من نحن"، لا شعارات بوابات الدفع. النتيجة: تردد المشتري في الدفع.</p>
+        </li>
+        <li>
+          <h4>93% بدون استراتيجية محتوى</h4>
+          <p>لا مدونة، لا محتوى تسويقي، لا حضور SEO. النتيجة: اعتماد كامل على الإعلانات المدفوعة المكلفة، بدون تراكم لجمهور مجاني.</p>
+        </li>
+      </ul>
+
+      <p>
+        <strong>هذه ليست أرقاماً مجردة. هذه دولارات تخسرها كل يوم.</strong>
+      </p>
+
+      <p>
+        تخيل متجراً يبيع 5,000$ شهرياً. لو طبق التحسينات البسيطة الـ 5 الأولى فقط، يمكن أن يصل لـ 15,000$-20,000$ شهرياً.
+      </p>
+
+      <p>
+        <em>الفرق ليس في "حظ" أو "إعلانات أكثر" — بل في تجنُّب الأخطاء التي ستراها في الفصل القادم.</em>
+      </p>
+    </div>
+
+    <!-- First CTA - Soft -->
+    <div class="cta-section">
+      <div class="cta-content">
+        <div class="cta-tag">استراحة قصيرة</div>
+        <h3 class="cta-title">
+          هل تتساءل: <em>هل متجري</em><br>
+          ضمن الـ 87؟
+        </h3>
+        <p class="cta-text">
+          إذا كنت تشك في أن متجرك يقع في إحدى هذه المشاكل، تواصل معي مباشرة عبر واتساب. سأنظر إلى متجرك شخصياً وأعطيك تشخيصاً صريحاً — مجاناً، بدون التزام.
+        </p>
+        <a href="https://wa.me/212621836322?text=السلام%20عليكم%20محمد،%20قرأت%20الفصل%20الثاني%20من%20الكتاب%20وأشك%20أن%20متجري%20يقع%20في%20بعض%20الأخطاء.%20هل%20يمكنك%20إلقاء%20نظرة%20سريعة%20عليه؟" class="cta-button" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          احصل على تشخيص مجاني
+        </a>
+        <p class="cta-note">— استشارة بدون التزام، رد خلال 24 ساعة —</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     CHAPTER 3: THE 7 KILLER MISTAKES
+     ============================================ -->
+<section id="chapter-3">
+  <div class="container">
+    <div class="chapter-mark">
+      <span class="chapter-number">٣</span>
+      الفصل الثالث · الأهم في الكتاب
+    </div>
+    <h2 class="chapter-title">
+      الأخطاء <em>السبعة</em> القاتلة
+    </h2>
+
+    <p class="chapter-intro">
+      كل خطأ يخسرك مبيعات بصمت. الأخطر: معظم أصحاب المتاجر لا يعرفون أنهم يرتكبونها. اقرأ بتأنٍ وضع متجرك بجانب كل خطأ.
+    </p>
+
+    <div class="errors-grid">
+
+      <div class="error-card">
+        <div class="error-number">I</div>
+        <div class="error-content">
+          <h3>السرعة الكارثية على الموبايل</h3>
+          <p>إذا تأخر متجرك أكثر من 3 ثوانٍ في الفتح على الموبايل، تخسر 53% من زوارك قبل أن يروا المنتج الأول. ومع ذلك، 73% من المتاجر العربية بطيئة جداً.</p>
+          <span class="impact">تأثير: -50% مبيعات محتملة</span>
+          <div class="fix">
+            <strong>الحل العملي</strong>
+            <p>اضغط الصور قبل الرفع (TinyPNG)، استخدم WebP بدل JPG، ثبّت LiteSpeed Cache أو WP Rocket، احذف Plugins غير المستخدمة. الهدف: PageSpeed Score فوق 75/100.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="error-card">
+        <div class="error-number">II</div>
+        <div class="error-content">
+          <h3>تجربة موبايل مُحبِطة</h3>
+          <p>أزرار صغيرة جداً (أقل من 44 بكسل)، نصوص تتطلب التكبير، نماذج معقدة، Pop-ups لا تُغلق بسهولة. كل هذا يدفع المستخدم للهروب بإحباط.</p>
+          <span class="impact">تأثير: -40% تحويل</span>
+          <div class="fix">
+            <strong>الحل العملي</strong>
+            <p>افتح متجرك على هاتفك. حاول إكمال طلب شراء بيد واحدة (الإبهام فقط). إذا واجهت أي صعوبة، زبائنك يواجهونها. أعد التصميم بمنهجية Mobile-First.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="error-card">
+        <div class="error-number">III</div>
+        <div class="error-content">
+          <h3>أوصاف منتجات هاوية</h3>
+          <p>"حذاء رياضي مريح، خامة عالية، 350 درهم". هذا ليس وصفاً — هذا اعتذار. الأوصاف القصيرة بدون فوائد محددة لا تبيع. تنقل قراراً للزبون قبل أن يستوعب القيمة.</p>
+          <span class="impact">تأثير: -35% تحويل</span>
+          <div class="fix">
+            <strong>الحل العملي</strong>
+            <p>كل وصف يجيب على 4 أسئلة: ما المشكلة التي يحلها؟ كيف يحلها هذا المنتج؟ ما الفائدة الحقيقية؟ لمن هو تحديداً؟ استخدم ChatGPT أو Claude للمسودة، ثم عدّلها بلمسة بشرية.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="error-card">
+        <div class="error-number">IV</div>
+        <div class="error-content">
+          <h3>صور منتجات سيئة</h3>
+          <p>الصورة هي تجربتك الحسية الوحيدة في المتجر الإلكتروني. الزبون لا يلمس، لا يشم، لا يجرّب. صور هاوية = "منتج هاوي، علامة تجارية ضعيفة، لن أدفع هنا".</p>
+          <span class="impact">تأثير: -45% ثقة</span>
+          <div class="fix">
+            <strong>الحل العملي</strong>
+            <p>3 قواعد ذهبية: خلفية بيضاء نظيفة، 5 زوايا على الأقل لكل منتج، صورة "سياق" تظهر المنتج مستخدماً. استخدم AI Tools مثل Photoroom أو Pebblely لتحويل صور الهاتف العادية إلى احترافية.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="error-card">
+        <div class="error-number">V</div>
+        <div class="error-content">
+          <h3>غياب إشارات الثقة</h3>
+          <p>المشتري للمرة الأولى يفكر: "هل هذا متجر حقيقي؟ هل سيرسلون لي الطلب؟ هل سأخسر مالي؟". غياب إشارات الثقة يحوّل هذا التردد لـ "اضغط Back".</p>
+          <span class="impact">تأثير: -60% تحويل أول مرة</span>
+          <div class="fix">
+            <strong>الحل العملي</strong>
+            <p>أضف الـ 6: شهادات حقيقية بأسماء وصور، سياسة إرجاع 14 يوم واضحة، صفحة "من نحن" بصورتك، رقم واتساب يعمل، شعارات بوابات الدفع، عداد للزبائن السعداء/المبيعات.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="error-card">
+        <div class="error-number">VI</div>
+        <div class="error-content">
+          <h3>عدم متابعة الزبون بعد البيع</h3>
+          <p>تحضير زبون جديد للشراء يكلفك 5-7 أضعاف ما يكلفك بيع نفس المنتج لزبون سابق. ومع ذلك، 95% من المتاجر العربية تنسى الزبون بمجرد إكمال الطلب.</p>
+          <span class="impact">تأثير: -70% قيمة عمر الزبون</span>
+          <div class="fix">
+            <strong>الحل العملي</strong>
+            <p>نظام آلي بسيط: يوم 0 (إيميل تأكيد + شكر)، يوم 3-5 (طلب تقييم)، يوم 14 (منتجات مكملة)، يوم 30 (خصم على الطلب التالي). كل هذا يمكن أتمتته في WordPress في يوم واحد.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="error-card">
+        <div class="error-number">VII</div>
+        <div class="error-content">
+          <h3>الاعتماد الكامل على الإعلانات المدفوعة</h3>
+          <p>تكلفة الإعلانات ارتفعت 222% في 5 سنوات. المتاجر التي لا تبني محتوى عضوي = هوامش ربح تتلاشى. كل زبون = تكلفة جديدة، بدون تراكم.</p>
+          <span class="impact">تأثير: -80% ربحية على المدى البعيد</span>
+          <div class="fix">
+            <strong>الحل العملي</strong>
+            <p>ابدأ مدونة على متجرك (مقال أسبوعياً). أنشئ قناة يوتيوب قصيرة. كن نشطاً على Instagram/TikTok. كل محتوى يجلب زوار مجاناً لسنوات. هذا ليس "ترف" — هذا أساس البقاء.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="pullquote">
+      <p>
+        إصلاح ثلاثة من هذه الأخطاء فقط يمكن أن يضاعف مبيعاتك خلال 90 يوم. إصلاحها جميعاً يحوّل متجرك من "كفاف" إلى "بزنس حقيقي".
+      </p>
+      <cite>— الخلاصة الكبرى من تحليل 100 متجر</cite>
+    </div>
+
+    <!-- Second CTA - Medium -->
+    <div class="cta-section">
+      <div class="cta-content">
+        <div class="cta-tag">سؤال صادق</div>
+        <h3 class="cta-title">
+          كم خطأ من السبعة<br>
+          <em>وجدت في متجرك؟</em>
+        </h3>
+        <p class="cta-text">
+          إذا اكتشفت 3+ من هذه الأخطاء في متجرك، فأنت تخسر يومياً مبيعات حقيقية. أرسل لي رابط متجرك على واتساب وسأعطيك خطة عمل محددة لإصلاح أهم 3 أخطاء — خلال 30 يوم.
+        </p>
+        <a href="https://wa.me/212621836322?text=السلام%20عليكم%20محمد،%20بعد%20قراءة%20الأخطاء%20السبعة،%20اكتشفت%20أن%20متجري%20يقع%20في%20عدة%20منها.%20أريد%20خطة%20عمل%20لإصلاحها." class="cta-button" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          أرسل لي خطة عملية
+        </a>
+        <p class="cta-note">— تحليل شخصي مخصص لمتجرك —</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================
+     CHAPTER 4: THE GOLDEN FORMULA
+     ============================================ -->
+<section id="chapter-4" style="background: var(--paper-warm);">
+  <div class="container">
+    <div class="chapter-mark">
+      <span class="chapter-number">٤</span>
+      الفصل الرابع
+    </div>
+    <h2 class="chapter-title">
+      الصيغة <em>الذهبية</em><br>
+      لمتجر يبيع فعلياً
+    </h2>
+
+    <p class="chapter-intro">
+      بعد 5 سنوات من التجربة، وتحليل مئات المتاجر، توصلت إلى صيغة بسيطة لكنها قوية. كل متجر ناجح في 2026 يحقق هذه الصيغة.
+    </p>
+
+    <div class="formula-box">
+      <div class="formula">
+        منتج جيد × <em>تجربة استثنائية</em> × ثقة عميقة × <em>متابعة مستمرة</em> = نمو حقيقي
+      </div>
+      <p class="formula-explanation">
+        الضرب ليس جمعاً. إذا كان أحد العوامل = 0، الناتج = 0. لا يكفي أن تكون 80% في كل شيء. يجب أن تكون 100% في الـ 4.
+      </p>
+    </div>
+
+    <div class="prose">
+      <h3>العامل الأول: منتج جيد فعلاً</h3>
+      <p>
+        لا توجد تكنولوجيا تنقذ منتجاً ضعيفاً. قبل التفكير في التصميم والتسويق، اسأل نفسك:
+      </p>
+      <p>
+        <strong>هل سيشتري صديقي المقرب هذا المنتج بسعره؟ ولماذا؟</strong>
+      </p>
+      <p>
+        إذا لم تجد إجابة واضحة، فالمشكلة في المنتج. لا تكمل القراءة. <em>أصلح المنتج أولاً</em>.
+      </p>
+
+      <h3>العامل الثاني: تجربة استثنائية</h3>
+      <p>
+        التجربة = كل لحظة من اللحظة التي يسمع فيها العميل اسم متجرك، حتى اللحظة التي يفتح فيها صندوق المنتج.
+      </p>
+      <p>
+        هذا يشمل:
+      </p>
+      <ul class="numbered-list">
+        <li>
+          <h4>تجربة قبل الشراء</h4>
+          <p>سرعة المتجر، جمال التصميم، وضوح المعلومات، سهولة التنقل، أوصاف بيعية واضحة.</p>
+        </li>
+        <li>
+          <h4>تجربة الشراء</h4>
+          <p>سهولة الدفع، خيارات متعددة، أمان واضح، تأكيد فوري، شفافية في الشحن.</p>
+        </li>
+        <li>
+          <h4>تجربة الانتظار</h4>
+          <p>إشعارات بمراحل الشحن، تتبع واضح، تواصل سريع عند الحاجة، صبر يستحق.</p>
+        </li>
+        <li>
+          <h4>تجربة الـ Unboxing</h4>
+          <p>التغليف الأنيق، الرسالة الشخصية، الهدية الصغيرة، اللمسة المميزة.</p>
+        </li>
+      </ul>
+
+      <h3>العامل الثالث: ثقة عميقة</h3>
+      <p>
+        الثقة لا تُبنى بكلمة "ثق بنا" — بل بـ <strong>أدلة ملموسة</strong>:
+      </p>
+      <ul class="numbered-list">
+        <li>
+          <h4>شهادات حقيقية</h4>
+          <p>أسماء حقيقية، صور حقيقية، قصص محددة. ليس "أحمد م. — كان رائعاً".</p>
+        </li>
+        <li>
+          <h4>شفافية تامة</h4>
+          <p>سياسات واضحة، أسعار شاملة، شحن محسوب مسبقاً، إرجاع سهل.</p>
+        </li>
+        <li>
+          <h4>حضور شخصي</h4>
+          <p>صورتك على صفحة "من نحن"، قصتك، رحلتك، وجهك المعروف.</p>
+        </li>
+        <li>
+          <h4>دليل اجتماعي</h4>
+          <p>عدد العملاء، عدد المبيعات، تقييمات Google، شعارات شراكات.</p>
+        </li>
+      </ul>
+
+      <h3>العامل الرابع: متابعة مستمرة</h3>
+      <p>
+        هذا العامل الأهم — والأكثر إهمالاً.
+      </p>
+      <p>
+        <strong>متجرك ليس مشروعاً ينتهي عند الإطلاق</strong>. هو كائن حي يحتاج رعاية مستمرة:
+      </p>
+      <ul class="numbered-list">
+        <li>
+          <h4>تطوير شهري</h4>
+          <p>تحديث التصميم، إصلاح المشاكل، تجربة ميزات جديدة، تحسين السرعة.</p>
+        </li>
+        <li>
+          <h4>محتوى مستمر</h4>
+          <p>منتجات جديدة، أوصاف محدثة، محتوى تسويقي، حملات موسمية.</p>
+        </li>
+        <li>
+          <h4>تحليل وتحسين</h4>
+          <p>أرقام المتجر، سلوك الزوار، أسباب المغادرة، اختبارات A/B.</p>
+        </li>
+        <li>
+          <h4>علاقة مع العملاء</h4>
+          <p>متابعة بعد الشراء، رد على الاستفسارات، حلول للمشاكل، مكافآت الولاء.</p>
+        </li>
+      </ul>
+
+      <p>
+        <strong>المتجر الناجح ليس "شيئاً تبنيه" — بل "شيئاً ترعاه"</strong>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     CHAPTER 5: OLD VS NEW MODEL
+     ============================================ -->
+<section id="chapter-5">
+  <div class="container">
+    <div class="chapter-mark">
+      <span class="chapter-number">٥</span>
+      الفصل الخامس · التحول الكبير
+    </div>
+    <h2 class="chapter-title">
+      النموذج <em>القديم</em><br>
+      ضد النموذج <em>الجديد</em>
+    </h2>
+
+    <p class="chapter-intro">
+      هنا أين يفصل العامل الرابع. النموذج التقليدي في السوق العربي لا يقدم متابعة مستمرة. لذا قررت بناء نموذج مختلف — للمرة الأولى في الوطن العربي.
+    </p>
+
+    <div class="comparison">
+      <div class="comparison-col old">
+        <div class="comparison-label">النموذج القديم</div>
+        <h3 class="comparison-title">مشروع لمرة واحدة</h3>
+        <ul class="comparison-list">
+          <li><span class="icon">✗</span>تدفع 1,500$-5,000$ دفعة واحدة</li>
+          <li><span class="icon">✗</span>المصمم يختفي بعد التسليم</li>
+          <li><span class="icon">✗</span>لا توجد خطة تسويق مرفقة</li>
+          <li><span class="icon">✗</span>كل تعديل لاحق = رسوم إضافية</li>
+          <li><span class="icon">✗</span>المتجر يتقادم بصرياً خلال أشهر</li>
+          <li><span class="icon">✗</span>تتعلم وحدك كيف تدير وتنمي متجرك</li>
+          <li><span class="icon">✗</span>إذا فشل = خسرت كل المبلغ</li>
+          <li><span class="icon">✗</span>لا توجد علاقة بعدية</li>
+        </ul>
+      </div>
+
+      <div class="comparison-col new">
+        <div class="comparison-label">النموذج الجديد</div>
+        <h3 class="comparison-title">اشتراك شهري متطور</h3>
+        <ul class="comparison-list">
+          <li><span class="icon">✓</span>ادفع 397$-1,397$/شهر — مرن</li>
+          <li><span class="icon">✓</span>أنا معك كل شهر، لا أختفي</li>
+          <li><span class="icon">✓</span>خطة تسويق شهرية مكتوبة</li>
+          <li><span class="icon">✓</span>تعديلات شهرية مشمولة بالاشتراك</li>
+          <li><span class="icon">✓</span>متجرك يتطور باستمرار، يبقى عصرياً</li>
+          <li><span class="icon">✓</span>مكالمة استراتيجية شهرية معي</li>
+          <li><span class="icon">✓</span>ضمان 30 يوم استرداد كامل</li>
+          <li><span class="icon">✓</span>شريك حقيقي في النمو</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="prose">
+      <h3>لماذا هذا النموذج جديد كلياً في الوطن العربي؟</h3>
+      <p>
+        في الغرب، نموذج الاشتراك لتصميم المتاجر موجود منذ سنوات (Designjoy، ManyPixels، Penji). لكنه يخدم السوق الإنجليزي.
+      </p>
+      <p>
+        في الوطن العربي، لا يزال الجميع يعمل بالنموذج القديم: "ادفع، استلم، اختفِ". لم يجرؤ أحد على نقل نموذج الاشتراك للعربية.
+      </p>
+      <p>
+        <strong>لذا أطلقت Ebdaa Media — أول خدمة عربية لتصميم المتاجر بنظام الاشتراك الشهري</strong>.
+      </p>
+
+      <div class="scenario">
+        <div class="scenario-tag">مثال عملي</div>
+        <h4>مقارنة مالية واقعية</h4>
+        <p>
+          نفترض أنك ستحتفظ بمتجر لمدة سنتين كاملتين. لنقارن التكلفة الفعلية:
+        </p>
+        <div class="scenario-numbers">
+          <div class="scenario-num">
+            <div class="scenario-num-value">$5K+</div>
+            <div class="scenario-num-label">مشروع لمرة (ثم 1,500$ سنوياً للصيانة)</div>
+          </div>
+          <div class="scenario-num">
+            <div class="scenario-num-value">$697</div>
+            <div class="scenario-num-label">اشتراك Growth شهرياً = شامل كل شيء</div>
+          </div>
+          <div class="scenario-num">
+            <div class="scenario-num-value">+ متابعة</div>
+            <div class="scenario-num-label">تطوير + تسويق + مكالمات شهرية</div>
+          </div>
+        </div>
+      </div>
+
+      <h3>لمن مناسب هذا النموذج؟</h3>
+      <p>
+        النموذج <strong>ليس لكل صاحب بزنس</strong>. إنه مناسب لك إذا:
+      </p>
+    </div>
+
+    <ul class="checklist">
+      <li class="checklist-title">هذا النموذج لك إذا...</li>
+      <li>لديك بزنس قائم (offline أو online) ويحقق إيرادات</li>
+      <li>تريد متجراً يتطور باستمرار، لا "صفقة تنتهي"</li>
+      <li>تفضل الالتزام الشهري المرن على الدفعات الكبيرة المفاجئة</li>
+      <li>تقدّر الجودة والاستمرارية على الأسعار الرخيصة</li>
+      <li>تريد شريكاً حقيقياً في النمو، لا مجرد "مزود خدمة"</li>
+      <li>جاهز للاستثمار في بزنسك لـ 6 شهور على الأقل</li>
+      <li>تفهم أن النمو الحقيقي تراكمي، ليس فوري</li>
+    </ul>
+
+    <div class="prose">
+      <p>
+        إذا وضعت علامة ✓ بجانب 5+ من النقاط أعلاه، <strong>أنت العميل المثالي لـ Ebdaa Media</strong>.
+      </p>
+    </div>
+
+    <!-- Third CTA - The Big One -->
+    <div class="cta-section">
+      <div class="cta-content">
+        <div class="cta-tag">القرار الذي قد يغيّر بزنسك</div>
+        <h3 class="cta-title">
+          هل أنت العميل<br>
+          <em>الذي أبحث عنه؟</em>
+        </h3>
+        <p class="cta-text">
+          أعمل مع 5 عملاء فقط شهرياً — لضمان الجودة لكل واحد. إذا كنت تجد أن النموذج الجديد يناسبك، تواصل معي مباشرة عبر واتساب. سأشرح لك الباقات الثلاث بالتفصيل، وأرشح لك الأنسب لبزنسك. بدون ضغط، بدون مكالمات مزعجة، بدون التزام.
+        </p>
+        <a href="https://wa.me/212621836322?text=السلام%20عليكم%20محمد،%20أعتقد%20أن%20نموذج%20الاشتراك%20الشهري%20يناسب%20بزنسي.%20أريد%20معرفة%20الباقات%20بالتفصيل%20وأيها%20الأنسب%20لحالتي." class="cta-button" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          احجز محادثة استكشافية
+        </a>
+        <p class="cta-note">— 5 مقاعد فقط شهرياً · الأولوية للأسرع —</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================
+     CHAPTER 6: SELF-AUDIT CHECKLIST
+     ============================================ -->
+<section id="chapter-6" style="background: var(--paper-warm);">
+  <div class="container">
+    <div class="chapter-mark">
+      <span class="chapter-number">٦</span>
+      الفصل السادس · أداة عملية
+    </div>
+    <h2 class="chapter-title">
+      قائمة <em>الفحص</em><br>
+      الذاتي لمتجرك
+    </h2>
+
+    <p class="chapter-intro">
+      30 نقطة فحص دقيقة. ضع علامة ✓ بجانب كل نقطة موجودة في متجرك. حسّب نتيجتك في النهاية. كن صادقاً مع نفسك.
+    </p>
+
+    <div class="prose">
+      <h3>القسم الأول: السرعة والأداء التقني</h3>
+    </div>
+
+    <ul class="checklist">
+      <li class="checklist-title">قسم السرعة والأداء (5 نقاط)</li>
+      <li>سرعة الموبايل في PageSpeed Insights فوق 75</li>
+      <li>السرعة على الديسكتوب فوق 90</li>
+      <li>كل الصور مضغوطة (WebP أو JPG محسّن)</li>
+      <li>عدد الإضافات (Plugins) أقل من 15</li>
+      <li>نظام Caching يعمل (LiteSpeed/WP Rocket)</li>
+    </ul>
+
+    <ul class="checklist">
+      <li class="checklist-title">قسم تجربة الموبايل (5 نقاط)</li>
+      <li>كل الأزرار قابلة للنقر بسهولة (44px+)</li>
+      <li>النصوص واضحة بدون تكبير</li>
+      <li>نموذج الدفع يعمل بسلاسة على الموبايل</li>
+      <li>لا توجد Pop-ups مزعجة لا تُغلق</li>
+      <li>الصور تتجاوب مع حجم الشاشة</li>
+    </ul>
+
+    <ul class="checklist">
+      <li class="checklist-title">قسم المنتجات والمحتوى (5 نقاط)</li>
+      <li>كل منتج بـ 5+ صور احترافية</li>
+      <li>كل وصف منتج 100+ كلمة بفوائد واضحة</li>
+      <li>كل منتج يستهدف كلمة بحث محددة (SEO)</li>
+      <li>توجد فئات منظمة وواضحة</li>
+      <li>صور المنتجات بخلفية موحدة (احترافية)</li>
+    </ul>
+
+    <ul class="checklist">
+      <li class="checklist-title">قسم إشارات الثقة (5 نقاط)</li>
+      <li>توجد شهادات حقيقية بأسماء وصور</li>
+      <li>سياسة إرجاع 14 يوم واضحة ومرئية</li>
+      <li>صفحة "من نحن" بصورة المالك وقصته</li>
+      <li>رقم تواصل يعمل (واتساب/هاتف)</li>
+      <li>شعارات بوابات الدفع المعروفة مرئية</li>
+    </ul>
+
+    <ul class="checklist">
+      <li class="checklist-title">قسم التسويق والمحتوى (5 نقاط)</li>
+      <li>مدونة نشطة بمقال أسبوعياً على الأقل</li>
+      <li>قائمة بريدية تعمل مع رسالة ترحيب آلية</li>
+      <li>حضور نشط على Instagram أو TikTok</li>
+      <li>استراتيجية SEO أساسية مطبقة</li>
+      <li>عداد للزبائن السعداء أو المبيعات</li>
+    </ul>
+
+    <ul class="checklist">
+      <li class="checklist-title">قسم ما بعد البيع (5 نقاط)</li>
+      <li>إيميل تأكيد فوري بعد كل طلب</li>
+      <li>نظام طلب تقييم بعد 3-5 أيام من الاستلام</li>
+      <li>عرض منتجات مكملة (Cross-sell)</li>
+      <li>برنامج ولاء أو خصومات للعملاء السابقين</li>
+      <li>تواصل دوري مع العملاء (شهري على الأقل)</li>
+    </ul>
+
+    <div class="prose">
+      <h3>كيف تحسب نتيجتك</h3>
+      <p>
+        احسب عدد ✓ التي وضعتها. النتيجة من 30:
+      </p>
+    </div>
+
+    <div class="scenario">
+      <div class="scenario-tag">دليل النتائج</div>
+      <h4>أين تقع نتيجتك؟</h4>
+      <p>
+        <strong>25-30:</strong> ممتاز! متجرك من 13% النخبة في السوق العربي. ركّز على التحسين المستمر.
+      </p>
+      <p>
+        <strong>18-24:</strong> جيد جداً. لكن لديك فجوات يمكن إصلاحها لمضاعفة المبيعات.
+      </p>
+      <p>
+        <strong>10-17:</strong> متوسط. متجرك يعمل، لكنه يخسر مبيعات يومياً بسبب أخطاء قابلة للإصلاح.
+      </p>
+      <p>
+        <strong>أقل من 10:</strong> تحتاج إعادة بناء شاملة. حالياً، أنت ضمن الـ 87% من المتاجر التي تخسر معظم مبيعاتها المحتملة.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================
+     CHAPTER 7: FINAL CTA
+     ============================================ -->
+<section id="chapter-7" class="final-cta">
+  <div class="final-cta-inner">
+    <div class="final-cta-tag">الخطوة التالية لك</div>
+
+    <h2 class="final-cta-title">
+      الآن بعد أن<br>
+      <em>عرفت كل شيء</em>...<br>
+      ماذا ستفعل؟
+    </h2>
+
+    <p class="final-cta-text">
+      أمامك خياران فقط. <br>
+      <strong style="color: var(--gold-glow);">الأول:</strong> أن تطبق ما قرأته بنفسك. تأخذ شهور لتتعلم WordPress، Elementor، SEO، AI Tools، النسخ البيعية، التسويق... <br>
+      <strong style="color: var(--gold-glow);">الثاني:</strong> أن تشترك في Ebdaa Media. أصمم لك متجراً احترافياً، أعطيك خطة تسويق شهرية، أطوّر معك المتجر كل شهر، نعمل سوياً لـ 6+ شهور.<br><br>
+      أنت تختار. لكن كل يوم تؤجل = يوم تخسر فيه مبيعات.
+    </p>
+
+    <div class="final-buttons">
+      <a href="https://wa.me/212621836322?text=السلام%20عليكم%20محمد،%20انتهيت%20من%20قراءة%20الكتاب%20كاملاً.%20أنا%20مهتم%20بخدمة%20Ebdaa%20Media%20وأريد%20معرفة%20كل%20التفاصيل%20لاتخاذ%20قراري." class="btn-large btn-whatsapp" target="_blank">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        تواصل عبر واتساب الآن
+      </a>
+    </div>
+
+    <p class="final-note">
+      "أنا لا أبحث عن كل صاحب بزنس. أبحث عن 5 فقط شهرياً.<br>
+      5 أشخاص جادين فعلاً في النمو."
+    </p>
+  </div>
+</section>
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer class="book-footer">
+  <div class="book-footer-mark">— نهاية الكتاب —</div>
+  <div class="book-footer-brand">Ebdaa Media</div>
+  <p class="book-footer-tagline">
+    أول خدمة عربية لتصميم المتاجر الإلكترونية بنظام الاشتراك الشهري. متجر يتطور معك، خطة تسويق متكاملة، شريك حقيقي في النمو.
+  </p>
+  <div class="book-footer-meta">
+    © 2026 Ebdaa Media · ebdaa.media · بقلم محمد العنوري<br>
+    تواصل: +212 621 836 322 · WhatsApp
+  </div>
+</footer>
+
+<script>
+// Progress bar
+const progressBar = document.getElementById('progressBar');
+window.addEventListener('scroll', () => {
+  const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+  progressBar.style.width = scrolled + '%';
+});
+
+// Scroll reveal
+const reveals = document.querySelectorAll('.error-card, .stat-box, .scenario, .pullquote, .formula-box, .checklist, .cta-section');
+reveals.forEach(el => el.classList.add('reveal'));
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+reveals.forEach(el => observer.observe(el));
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+
+</body>
+</html>
